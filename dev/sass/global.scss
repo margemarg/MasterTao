@@ -1,0 +1,218 @@
+::selection {
+    background-color: #89C249;
+}
+
+body {
+    font-family: $font-primary, $font-secondary;
+    font-size: $font-size;
+    background-color: $primary-bg-color;
+    color: $color;
+    counter-reset: listCounter;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1,
+.h1 {
+    font-size: 56px;
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+}
+
+h4,
+.h4 {
+    font-size: 22px;
+}
+
+h5,
+.h5 {
+    font-size: 20px;
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+}
+
+a {
+    color: $primary-btn-color;
+}
+
+a:hover {
+    color: $primary-btn-color;
+    text-decoration: none;
+}
+
+ol > li,
+ul > li {
+    list-style-type: none;
+}
+
+ol > li::before {  
+    content: counter(listCounter) ". ";  
+    counter-increment: listCounter;
+    color: #89C249;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+ul > li::before {  
+    content: "";
+    background-color: #89C249;
+    margin-right: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/*ol > li::marker {
+    color: #89C249;
+}*/
+
+[type="checkbox"],
+[type="radio"] {
+    display: none;
+}
+
+[type="checkbox"] + label,
+[type="radio"] + label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: $font-size;
+    margin-bottom: 6px;
+}
+
+[type="checkbox"] + label::before,
+[type="radio"] + label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border: 1px solid #282B38;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+[type="radio"] + label::before {
+    border-radius: 50%;
+}
+
+[type="checkbox"] + label:hover::before,
+[type="radio"] + label:hover::before {
+    border: 1px solid #E58D35;
+}
+
+[type="checkbox"]:checked + label:before {
+    content: "";
+    background: url(assets/img/img-checkbox.png) center / contain no-repeat #fff;
+}
+
+[type="radio"]:checked + label::before {
+    content: "•";
+    background-color: #fff;
+    font-size: 45px;
+    line-height: 18px;
+    color: #282B38;
+    text-align: center;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: $font-size;
+    line-height: 145%;
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+
+.btn-primary {
+    background-color: $primary-btn-color;
+    border-color: $primary-btn-color;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: $primary-btn-color;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: $secondary-btn-color;
+    border-color: $secondary-btn-color;
+}
+
+.btn-lg {
+    padding: 20px 35px;
+    font-size: $font-size;
+}
+
+.btn-arrow {
+    margin: 0 -14px 0 47px;
+    width: 27px;
+    height: 27px;
+    transition: 0.3s;
+}
+
+.btn:hover .btn-arrow {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(49deg) brightness(180%) contrast(101%);
+}
+
+.scroller {
+    overflow: auto;
+    height: 400px;
+    padding-right: 15px;
+}
+
+.scroller::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroller::-webkit-scrollbar-track {
+    background-color: #FFFFFF;
+}
+  
+.scroller::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #E58D35;
+    border: 3px solid #FFFFFF;
+}
