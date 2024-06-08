@@ -10,6 +10,14 @@ body {
     counter-reset: listCounter;
 }
 
+.container {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .fw-300 {
     font-weight: 300;
 }
@@ -162,7 +170,7 @@ ul > li::before {
     font-size: $font-size;
     line-height: 145%;
     border-radius: 50px;
-    padding: 15px 20px;
+    padding: 13px 21px;
 }
 
 .btn-primary {
