@@ -2,7 +2,7 @@
     .mobile-container {
         display: none;
         position: absolute;
-        top: 105px;
+        top: 95px;
         left: 0;
         flex-direction: column;
         background-color: $secondary-bg-color;
@@ -12,6 +12,19 @@
         &.show {
             display: flex;
         }
+
+        &> .btn {
+            padding: 22px 84px;
+        }
+    }
+
+    .header-nav {
+        padding-top: 17px;
+        padding-bottom: 15px;
+    }
+
+    .header-nav-logo {
+        max-width: 126px;
     }
     
     .header-nav-list {

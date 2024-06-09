@@ -1,9 +1,14 @@
 .header-nav {
     @extend .container;
     display: flex;
+    align-items: center;
     padding-top: 26px;
     padding-bottom: 39px;
     position: relative;
+}
+
+.header-nav-logo {
+    max-width: 172px;
 }
 
 .mobile-container {
@@ -22,5 +27,28 @@
         color: $color;
         text-decoration: none;
         font-weight: 400;
+    }
+}
+
+.hamburger-box {
+    width: 27.5px;
+    height: 6px;
+}
+
+.hamburger-inner {
+    background-color: $color;
+    width: 27.5px;
+    height: 2.5px;
+
+    &:after {
+        background-color: $color;
+        width: 27.5px;
+        height: 2.5px;
+    }
+
+    &:before {
+        background-color: $color;
+        width: 27.5px;
+        height: 2.5px;
     }
 }
