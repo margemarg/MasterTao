@@ -1,4 +1,83 @@
-.swiper {
-    width: 600px;
-    height: 300px;
+.slider-info {
+    @extend .container-xxl;
+    overflow: hidden;
+    position: relative;
+
+    .swiper-slide {
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 0 72px;
+    }
+
+    .swiper-pagination {
+        bottom: 38px;
+    }
+
+    .swiper-pagination-bullet {
+        background: transparent;
+        opacity: 1;
+        border: 2px solid $color;
+        &.swiper-pagination-bullet-active {
+            background: $color;
+        }
+    }
+
+    .arrow-container {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1523px;
+        z-index: 2;
+    }
+
+    /*если нужно сделать стрелочки для свайпера самому*/
+    /*.swiper-button-prev {
+        transform: rotate(180deg);
+    }*/
+
+    /*.swiper-button-prev::after,
+    .swiper-button-next::after {
+        content: "";
+        font-family: initial;
+        width: 13px;
+        height: 23px;
+        background-image: ;
+    }*/
+}
+
+.banner {
+    padding-bottom: 67px;
+
+    .banner-title {
+        font-size: 56px;
+        line-height: 1.26;
+        margin-bottom: 8px;
+        font-weight: 700;
+        max-width: 463px;
+        text-transform: uppercase;
+    }
+    
+    .banner-description {
+        font-size: 20px;
+        line-height: 1.35;
+        margin-bottom: 36px;
+        font-weight: 300;
+        max-width: 320px;
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: $color;
+    width: 72px;
+    height: 48px;
+
+    &:hover {
+        color: $secondary-btn-color;
+    }
 }

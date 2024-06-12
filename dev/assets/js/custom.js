@@ -1,3 +1,4 @@
+//FancyBox
 Fancybox.bind("[data-fancybox]", {
 
 });
@@ -16,7 +17,8 @@ burger.addEventListener('click', showBurgerMenu)
 
 
 //Swiper
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.slider-info', {
+  spaceBetween: 40,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -26,7 +28,7 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  autopkay: {
+  autoplay: {
     delay: 5000,
   },
 });

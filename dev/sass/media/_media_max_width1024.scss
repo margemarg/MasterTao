@@ -1,21 +1,7 @@
 @media screen and (max-width: 1024px) {
-    .mobile-container {
-        display: none;
-        position: absolute;
-        top: 95px;
-        left: 0;
-        flex-direction: column;
-        background-color: $secondary-bg-color;
-        padding: 0 40px 60px;
-        align-items: center;
-
-        &.show {
-            display: flex;
-        }
-
-        &> .btn {
-            padding: 22px 84px;
-        }
+    .container {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
     }
 
     .header-nav {
@@ -25,6 +11,26 @@
 
     .header-nav-logo {
         max-width: 126px;
+    }
+
+    .mobile-container {
+        display: none;
+        position: absolute;
+        top: 67px;
+        left: 0;
+        flex-direction: column;
+        background-color: $secondary-bg-color;
+        padding: 0 40px 60px;
+        align-items: center;
+
+        &.show {
+            display: flex;
+            z-index: 3;
+        }
+
+        &> .btn {
+            padding: 22px 84px;
+        }
     }
     
     .header-nav-list {
