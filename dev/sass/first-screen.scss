@@ -1,3 +1,8 @@
+.first-screen {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .slider-info {
     @extend .container-xxl;
     overflow: hidden;
@@ -32,7 +37,6 @@
         top: 50%;
         transform: translate(-50%, -50%);
         max-width: 1523px;
-        z-index: 2;
     }
 
     /*если нужно сделать стрелочки для свайпера самому*/
