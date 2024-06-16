@@ -84,7 +84,7 @@ section {
         width: 85px;
         height: 2px;
         background-color: $secondary-btn-color;
-        bottom: 35px;
+        bottom: 45px;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -92,6 +92,7 @@ section {
     h2 {
         font-size: 36px;
         text-transform: uppercase;
+        margin-bottom: 6px;
     }
 
     h3 {
@@ -99,26 +100,12 @@ section {
         font-weight: 300;
     }
 
-    &.text-start {
-
-        &::after {
-            left: 0;
-            transform: none
-        }
-    }
-
     &.half-section {
         max-width: 600px;
         width: 100%;
         text-align: left;
 
-        &::after {
-            display: none;
-        }
-
         h2::after {
-            content: "";
-            display: inline-block;
             width: 85px;
             height: 2px;
             background-color: $secondary-btn-color;

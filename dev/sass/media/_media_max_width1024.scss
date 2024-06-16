@@ -1,6 +1,8 @@
 @media screen and (max-width: 1024px) {
-    section {    
-        &.accent {
+    section {
+        padding: 55px 0 60px !important;
+        
+        &.secondary-bg {
             &::before {
                 width: 100% !important;
                 border-radius: 0px !important;
@@ -48,6 +50,11 @@
         line-height: 222%;
     }
 
+    .first-screen {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
     .slider-info {
         padding: 0 !important;
 
@@ -91,6 +98,26 @@
             padding: 20px 33px;
         }
     }
+
+    .template-title {
+
+        &::after {
+
+        }
+    
+        h2 {
+            font-size: 24px !important;
+        }
+
+        h3 {
+            font-size: 18px !important;
+        }
+
+        &.half-section {
+            margin: 0 auto;
+            text-align: center !important;
+        }
+    }    
 }
 
 
