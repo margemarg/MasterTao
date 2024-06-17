@@ -45,6 +45,27 @@ const swiper = new Swiper('.slider-info', {
 });
 
 
+//Calculation
+const fileLabel = document.querySelectorAll('.calculation-label');
+const fileInput = document.querySelectorAll('.calculation-file');
+
+//fileInput.addEventListener('change', function() {
+//  fileName.innerHTML = fileInput.files[0].name;
+//});
+
+fileInput.forEach(item => {
+  item.addEventListener('change', function() {
+    const fileName = item.closest('.input-box').querySelector('.file-name')
+    console.log(fileName);
+    fileName.innerHTML = item.files[0].name;
+  })
+})
+
+
+//margin-bottom
+fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))
+
+
 //Slick
 //$(document).ready(function() {
   //$('your-class').slick({
