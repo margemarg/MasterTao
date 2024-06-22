@@ -6,8 +6,6 @@
 
 .slider-info {
     @extend .container-xxl;
-    overflow: hidden;
-    position: relative;
 
     .swiper-slide {
         min-height: 700px;
@@ -20,15 +18,6 @@
 
     .swiper-pagination {
         bottom: 38px;
-    }
-
-    .swiper-pagination-bullet {
-        background: transparent;
-        opacity: 1;
-        border: 2px solid $color;
-        &.swiper-pagination-bullet-active {
-            background: $color;
-        }
     }
 
     .arrow-container {

@@ -19,21 +19,24 @@ burger.addEventListener('click', showBurgerMenu)
 
 
 //Swiper
-const swiper = new Swiper('.slider-info', {
+const swiperInfo = new Swiper('.slider-info', {
   spaceBetween: 15,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+
   navigation: {
     enabled: false,
   },
+
   autoplay: {
     delay: 5000,
   },
+
   breakpoints: {
-    992: {
+    1025: {
       spaceBetween: 40,
       navigation: {
         enabled: true,
@@ -65,6 +68,57 @@ fileInput.forEach(item => {
 //margin-bottom
 fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))
 
+
+//Swiper#2
+let swiperAdvantages
+
+function initAdvantages() {
+  swiperAdvantages = new Swiper('.slider-advantages', {
+    spaceBetween: 15,
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      enabled: true,
+    },
+  
+    autoplay: {
+      delay: 5000,
+    },
+  
+    breakpoints: {
+      1025: {
+        spaceBetween: 40,
+        navigation: {
+          enabled: true,
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          enabled: false,
+        },
+      }
+    }
+  });
+}
+
+function destroyAdvantages() {
+  swiperAdvantages.destroy (true, true)
+}
+
+function mediaQuery(matchMedia1024) {
+  if (matchMedia1024.matches) {
+    initAdvantages()
+  }
+  else {
+    destroyAdvantages()
+  }
+}
+
+const matchMedia1024 = window.matchMedia("(max-width: 1024px)")
+
+mediaQuery(matchMedia1024);
 
 //Slick
 //$(document).ready(function() {

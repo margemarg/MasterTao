@@ -1,8 +1,16 @@
+.calculation {
+    
+    .container {
+        position: relative;
+    }
+}
+
 .calculation-form {
     max-width: 626px;
     padding: 47px 50px 61px;
     background-color: $secondary-bg-color;
     border-radius: 20px;
+    box-shadow: 5px 15px 40px #02030a52;
 
     .form-row {
         gap: 30px;
@@ -83,4 +91,11 @@
 
 .special-gap {
     margin-bottom: 16px;
+}
+
+.img-calculation {
+    position: absolute;
+    bottom: -100px;
+    left: 626px;
+    max-width: 37.167vw;
 }
