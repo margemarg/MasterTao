@@ -1,0 +1,108 @@
+.slider-template {
+    --padding: 90px;
+    padding: 0 var(--padding);
+    margin: 0 calc(-15px - var(--padding));
+
+    .swiper-slide {
+        padding: 5px;
+    }
+
+    .swiper-template-space {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        max-width: 1323px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width: var(--padding);
+        height: 100%;
+        background: $primary-bg-color;
+        z-index: 2;
+    }
+
+    &::after {
+        left: calc(100% - var(--padding));
+    }
+}
+
+.template-card {
+    border-radius: 20px;
+    background: $secondary-bg-color;
+    padding: 0 20px 27px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 8px #02030a52;
+
+    .img-box {
+        margin: 0 -20px 27px;
+    }
+
+    .img-card {
+        border-radius: 0;
+        height: 229px;
+        object-fit: contain;
+    }
+
+    .card-title {
+        margin-bottom: 12px;
+    }
+
+    .card-options {
+        margin-bottom: 18px;
+    }
+
+    .option-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 13px;
+
+        .option-item {
+
+            img {
+                margin-right: 10px;
+                max-width: 24px;
+            }
+        }
+    }
+}
+
+.card-price {
+    color: $color;
+
+    span {
+        font-size: 22px;
+        line-height: 125%;
+
+        &:first-child {
+            color: #A3A3A3;
+        }
+    }
+
+    strong {
+        font-weight: 700;
+        font-size: 45px;
+    }
+}
+
+.btn-row {
+    display: flex;
+    gap: 14px;
+
+    .btn {
+        width: 153px;
+        padding: 13px 5px;
+    }
+}
