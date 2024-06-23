@@ -73,7 +73,7 @@ fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.class
 //let swiperAdvantages
 
 //function initAdvantages() {
-//  swiperAdvantages = new Swiper('.slider-advantages', {
+//  const swiperAdvantages = new Swiper('.slider-advantages', {
 //    spaceBetween: 15,
 //    loop: true,
 
@@ -96,7 +96,7 @@ fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.class
 //          prevEl: '.swiper-button-prev',
 //        },
 //        pagination: {
-//          enabled: false,
+//         enabled: false,
 //        },
 //      }
 //    }
@@ -116,16 +116,17 @@ fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.class
 //  }
 //}
 
-//const matchMedia1024 = window.matchMedia("(max-width: 1024px)")
+//const matchMedia1024 = window.matchMedia("(max-width: 1024px)");
 
 //mediaQuery(matchMedia1024);
 
 
 //Delivery
 const swiperDelivery = new Swiper('.slider-template', {
-  speed: 700,
+  speed: 1000,
   slidesPerView: 1,
   loop: true,
+  spaceBetween: 15,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -141,7 +142,19 @@ const swiperDelivery = new Swiper('.slider-template', {
 
   breakpoints: {
     1025: {
-      spaceBetween: 20,
+      spaceBetween: 0,
+      slidesPerView: 2,
+      navigation: {
+        enabled: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        enabled: false,
+      },
+    },
+    1400: {
+      spaceBetween: 0,
       slidesPerView: 3,
       navigation: {
         enabled: true,

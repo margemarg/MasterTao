@@ -1,10 +1,10 @@
 .slider-template {
     --padding: 90px;
     padding: 0 var(--padding);
-    margin: 0 calc(-15px - var(--padding));
+    margin: -15px calc(-30px - var(--padding));
 
     .swiper-slide {
-        padding: 5px;
+        padding: 15px;
     }
 
     .swiper-template-space {
@@ -13,6 +13,7 @@
         left: 0;
         max-width: 1323px;
         width: 100%;
+        height: 0;
         display: flex;
         justify-content: space-between;
         z-index: 2;
@@ -40,9 +41,12 @@
     border-radius: 20px;
     background: $secondary-bg-color;
     padding: 0 20px 27px;
+    max-width: 360px;
+    height: 482px;
+    margin: 0 auto;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0px 0px 8px #02030a52;
+    box-shadow: 0px 0px 15px #02030a52;
 
     .img-box {
         margin: 0 -20px 27px;
@@ -55,11 +59,11 @@
     }
 
     .card-title {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .card-options {
-        margin-bottom: 18px;
+        margin-bottom: 11px;
     }
 
     .option-list {
@@ -67,7 +71,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        margin-bottom: 13px;
+        margin-bottom: 7px;
 
         .option-item {
 
@@ -99,6 +103,7 @@
 
 .btn-row {
     display: flex;
+    justify-content: center;
     gap: 14px;
 
     .btn {

@@ -123,6 +123,20 @@
     .img-calculation {
         display: none;
     }
+
+    .slider-template {
+        padding: 0 0 25px !important;
+        margin: -15px -20px 0 !important;
+
+        &::before,
+        &::after {
+            display: none !important;
+        }
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 0;
+    }
 }
 
 

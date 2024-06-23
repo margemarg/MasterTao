@@ -77,6 +77,10 @@ section {
     position: relative;
 }
 
+.swiper-pagination {
+    font-size: 0;
+}
+
 .swiper-pagination-bullet {
     background: transparent;
     opacity: 1;
