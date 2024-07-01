@@ -69,75 +69,51 @@ fileInput.forEach(item => {
 fileLabel.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))
 
 
-//Swiper#2
-//let swiperAdvantages
+//Swiper#2_Advantages
+const advantagesCount = document.querySelectorAll('.slider-advantages .swiper-slide').length
 
-//function initAdvantages() {
-//  const swiperAdvantages = new Swiper('.slider-advantages', {
-//    spaceBetween: 15,
-//    loop: true,
-
-//    pagination: {
-//      el: '.swiper-pagination',
-//      clickable: true,
-//      enabled: true,
-//    },
-  
-//    autoplay: {
-//      delay: 5000,
-//    },
-  
-//    breakpoints: {
-//      1025: {
-//        spaceBetween: 40,
-//        navigation: {
-//          enabled: true,
-//          nextEl: '.swiper-button-next',
-//          prevEl: '.swiper-button-prev',
-//        },
-//        pagination: {
-//         enabled: false,
-//        },
-//      }
-//    }
-//  });
-//}
-
-//function destroyAdvantages() {
-//  swiperAdvantages.destroy (true, true)
-//}
-
-//function mediaQuery(matchMedia1024) {
-//  if (matchMedia1024.matches) {
-//    initAdvantages()
-//  }
-//  else {
-//    destroyAdvantages()
-//  }
-//}
-
-//const matchMedia1024 = window.matchMedia("(max-width: 1024px)");
-
-//mediaQuery(matchMedia1024);
-
-
-//Delivery
-const swiperDelivery = new Swiper('.slider-template', {
-  speed: 1000,
-  slidesPerView: 1,
+const swiperAdvantages = new Swiper('.slider-advantages', {
+  spaceBetween: 12,
   loop: true,
-  spaceBetween: 15,
+  simulateTouch: true,
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    enabled: true,
   },
+  breakpoints: {
+    1025: {
+      spaceBetween: 0,
+      initialSlide: 0,
+      loop: false,
+      slidesPerGroup: advantagesCount,
+      simulateTouch: false,
+      pagination: {
+        el: '.swiper-pagination',
+        enabled: false,
+      },
+    }
+  }
+});  
 
+
+//Swiper#3-4_Template
+const swiperTemplate = new Swiper('.slider-template', {
+  speed: 2000,
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 2000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    enabled: true,
+  },
   navigation: {
     enabled: false,
-  },
-
-  autoplay: {
-    delay: 5000,
   },
 
   breakpoints: {
@@ -150,6 +126,7 @@ const swiperDelivery = new Swiper('.slider-template', {
         prevEl: '.swiper-button-prev',
       },
       pagination: {
+        el: '.swiper-pagination',
         enabled: false,
       },
     },
@@ -162,19 +139,9 @@ const swiperDelivery = new Swiper('.slider-template', {
         prevEl: '.swiper-button-prev',
       },
       pagination: {
+        el: '.swiper-pagination',
         enabled: false,
       },
     }
   }
 });
-
-//Slick
-//$(document).ready(function() {
-  //$('your-class').slick({
-    //dots: true,
-    //infinite: false,
-    //pauseOnHover: true,
-    //autoplay: true,
-    //autoplaySpeed: 1000,
-  //});
-//});

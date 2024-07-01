@@ -82,6 +82,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding-bottom: 117px;
 
         .banner-title {
             font-size: 32px;
@@ -124,6 +125,13 @@
         display: none;
     }
 
+    .advantage {
+
+        .advantage-title {
+            margin-bottom: 52px !important;
+        }
+    }
+
     .slider-template {
         padding: 0 0 25px !important;
         margin: -15px -20px 0 !important;
@@ -134,7 +142,8 @@
         }
     }
     
-    .swiper-horizontal>.swiper-pagination-bullets {
+    .service .swiper-horizontal>.swiper-pagination-bullets,
+    .delivery .swiper-horizontal>.swiper-pagination-bullets {
         bottom: 0;
     }
 }

@@ -58,8 +58,8 @@ section {
 
 .container {
     max-width: 1170px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -79,6 +79,9 @@ section {
 
 .swiper-pagination {
     font-size: 0;
+    display: flex;
+    justify-content: center;
+    gap: 26px;
 }
 
 .swiper-pagination-bullet {
