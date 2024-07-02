@@ -1,22 +1,23 @@
 @media screen and (max-width: 1024px) {
     section {
-        padding: 55px 0 60px !important;
+        padding: 55px 0 60px;
         
         &.secondary-bg {
             &::before {
-                width: 100% !important;
-                border-radius: 0px !important;
+                width: 100%;
+                border-radius: 0px;
             }
         }
     }
     
     .container {
-        padding-right: 20px !important;
-        padding-left: 20px !important;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .header-nav {
-        padding: 18px 0;
+        padding-top: 18px;
+        padding-bottom: 18px;
     }
 
     .header-nav-logo {
@@ -51,12 +52,12 @@
     }
 
     .first-screen {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .slider-info {
-        padding: 0 !important;
+        padding: 0;
 
         .swiper-slide {
             min-height: calc(100vh - 72px);
@@ -81,6 +82,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding-bottom: 117px;
 
         .banner-title {
             font-size: 32px;
@@ -102,18 +104,48 @@
     .template-title {
     
         h2 {
-            font-size: 24px !important;
+            font-size: 24px;
         }
 
         h3 {
-            font-size: 18px !important;
+            font-size: 18px;
         }
 
         &.half-section {
             margin: 0 auto;
-            text-align: center !important;
+            text-align: center;
         }
-    }    
+    }
+
+    .calculation-form {
+        margin: 0 auto;
+    }
+
+    .img-calculation {
+        display: none;
+    }
+
+    .advantage {
+
+        .advantage-title {
+            margin-bottom: 52px !important;
+        }
+    }
+
+    .slider-template {
+        padding: 0 0 25px !important;
+        margin: -15px -20px 0 !important;
+
+        &::before,
+        &::after {
+            display: none !important;
+        }
+    }
+    
+    .service .swiper-horizontal>.swiper-pagination-bullets,
+    .delivery .swiper-horizontal>.swiper-pagination-bullets {
+        bottom: 0;
+    }
 }
 
 

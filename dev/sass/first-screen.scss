@@ -1,12 +1,11 @@
 .first-screen {
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .slider-info {
     @extend .container-xxl;
-    overflow: hidden;
-    position: relative;
 
     .swiper-slide {
         min-height: 700px;
@@ -18,16 +17,10 @@
     }
 
     .swiper-pagination {
-        bottom: 38px;
-    }
-
-    .swiper-pagination-bullet {
-        background: transparent;
-        opacity: 1;
-        border: 2px solid $color;
-        &.swiper-pagination-bullet-active {
-            background: $color;
-        }
+        bottom: 43px;
+        display: flex;
+        justify-content: center;
+        gap: 26px;
     }
 
     .arrow-container {

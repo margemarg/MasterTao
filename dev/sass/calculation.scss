@@ -1,0 +1,101 @@
+.calculation {
+    
+    .container {
+        position: relative;
+    }
+}
+
+.calculation-form {
+    max-width: 626px;
+    padding: 47px 50px 61px;
+    background-color: $secondary-bg-color;
+    border-radius: 20px;
+    box-shadow: 5px 15px 40px #02030a52;
+
+    .form-row {
+        gap: 30px;
+    }
+    
+    .form-column {
+        width: 100%;
+    }
+    
+    .input-box {
+        margin-bottom: 17px;
+    
+        label {
+            margin-bottom: 6px;
+            font-size: 15px;
+            line-height: 1.26;
+            font-weight: 600;
+        }
+    
+        input {
+            border-radius: 10px;
+            padding: 18px 20px;
+            border: none;
+            font-size: 15px;
+            line-height: 1.26;
+            width: 100%;
+            min-height: 56px;
+            transition: .2s;
+    
+            &:hover,
+            &:active {
+                box-shadow: 0px 0px 4px 2px $primary-btn-color;
+            }
+    
+            &:focus {
+                box-shadow: 0px 0px 4px 2px $secondary-btn-color;
+            }
+    
+            &::placeholder {
+                color: #CBCBCB;
+            }
+        }
+
+        .file-name {
+            font-size: 15px;
+            margin: /*16px*/0 0 9px 0;
+        }
+
+        .calculation-label {
+            border: 1px dashed #FFFFFF42;
+            /*background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23FFFFFF42' stroke-width='4' stroke-dasharray='5%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");*/
+            padding: 12px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 9px;
+    
+            &:hover {
+                color: $secondary-btn-color;
+                border: 1px dashed $secondary-btn-color;
+                /*background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%2389C249FF' stroke-width='4' stroke-dasharray='5%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");*/
+            }
+        }
+    }
+    
+    .option-box {
+        padding-top: 22px;
+    }
+    
+    .control-box {
+        margin-bottom: 13px;
+    }
+
+    [type="file"] {
+        display: none;
+    }
+}
+
+.special-gap {
+    margin-bottom: 16px;
+}
+
+.img-calculation {
+    position: absolute;
+    bottom: -100px;
+    left: 626px;
+    max-width: 37.167vw;
+}
